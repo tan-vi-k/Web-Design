@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="icon" href="assignment.png" type="image/x-icon" />
+    <title>Assignment 1</title>
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">ASSIGNMENT 1</h2>
+        <div class="toggle"></div>
+      </header>
+
+      <div class="overlay"></div>
+      <div class="text">
+        <h2>About Me</h2>
+        <img
+          class="myimg"
+          src="https://images.pexels.com/photos/906106/pexels-photo-906106.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="My Picture"
+        />
+        <p>
+          Hi, I am Tanvi! I am currently pursuing my Bachelor's degree in
+          Engineering from Atharva College of Engineering. My specialization is
+          in Electronics and Telecommunication engineering. My hobbies are
+          listening to music, specifically by a korean-pop group called BTS. I
+          also watch true crime documentaries, aviation disaster management and
+          conspiracy theory videos. I am currently brushing up my French skills.
+          Bonjour Madame / Monsieur!
+        </p>
+        <h2>Project Portfolio</h2>
+        <p>
+          Currently I am working on making an 'Automated Robotic Vacuum Cleaner'
+          with my project team. This project aims to combining VSLAM and LIDAR
+          technologies, and making a high effeciency, low-cost vacuum cleaner.
+          Previously, I have also worked on Path following robot using Arduino.
+        </p>
+      </div>
+
+      <ul class="social">
+        <li>
+          <a href="https://www.linkedin.com/in/tanvi-kanchan-74837623a/">
+            <img
+              src="https://i.ibb.co/TtPxMPk/icons8-linkedin-2-30.png"
+              alt="linkedin"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/tanvik14/">
+            <img src="https://i.ibb.co/ySwtH4B/instagram.png" alt="instagram"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/"
+            ><img src="https://i.ibb.co/x7P24fL/facebook.png" alt="facebook"
+          /></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/"
+            ><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" alt="twitter"
+          /></a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="assgn1.html">Assignment 1</a></li>
+        <li><a href="#">Assignment 2</a></li>
+        <li><a href="#">Assignment 3</a></li>
+        <li><a href="#">Assignment 4</a></li>
+      </ul>
+    </div>
+
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const showcase = document.querySelector(".showcase");
+
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: url("https://images.pexels.com/photos/326518/pexels-photo-326518.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+.wrapper {
+  width: 700px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px 30px 25px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+}
+header,
+.content{
+  color: #434548;
+}
+.wrapper header {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+}
+.wrapper .content {
+  display: flex;
+  margin: 35px 0px;
+  justify-content:center;
+}
+
+.quote {
+  font-size: 25px;
+  text-align: justify;
+}
+
+.wrapper .buttons {
+  border-top: 2px solid #ccc;
+}
+.buttons .features {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.features button {
+  display: flex;
+}
+.features button {
+  outline: none;
+  font-size: 16px;
+  margin: 0 5px;
+  display: flex;
+  cursor: pointer;
+  padding: 13px 22px;
+  border-radius: 30px;
+  background-color: #9a9b9d;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #9a9b9d;
+  transition: all 0.3s ease;
+}
+
+button:is(:hover, .active) {
+  color: #fff;
+  background: #434548;
+}
+/*assignment1 css*/
+.img {
+  height: 200px;
+  background-image: url("https://www.flaticon.com/free-icon/woman_6997662?term=female&page=1&position=5&origin=search&related_id=6997662");
+  background: #aaa;
+}
+
+.navbar {
+  width: 100vw;
+  background: #ccc;
+  padding: 30px 30px 25px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+  justify-content: flex-start;
+}
+
+.navbar-nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ccc;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav-item li {
+  float: left;
+}
+
+.nav-link a {
+  display: block;
+  color: #434548;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.nav-link-active) {
+  background-color: #434548;
+  color: #ccc;
+}
+
+.nav-link-active {
+  background-color: #32b9c6;
+}
+
+@media only screen and (max-width: 380px) {
+  .wrapper {
+    width: 370px;
+  }
+}
